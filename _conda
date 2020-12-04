@@ -143,7 +143,7 @@ local state line context
 local -A opt_args
 
 __conda_envs(){
-    local -a envs
+    local -a envs tmp
     local -a ls_opts=("-1")
     local -a describe_opts
     # only parse environments.txt (including unnamed envs) if asked by the user
